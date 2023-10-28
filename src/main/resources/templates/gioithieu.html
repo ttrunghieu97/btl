@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" th:href="@{img/favicon.ico}" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" th:href="@{css/style.css}">
+    <link rel="stylesheet" th:href="@{css/topnav.css}">
+    <link rel="stylesheet" th:href="@{css/header.css}">
+    <link rel="stylesheet" th:href="@{css/taikhoan.css}">
+    <link rel="stylesheet" th:href="@{css/footer.css}">
+    <link rel="stylesheet" th:href="@{css/gioithieu.css}">
+
+    <!-- js -->
+    <script th:src="@{data/products.js}"></script>
+    <script th:src="@{js/dungchung.js}"></script>
+    <script>
+        window.onload = function() {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script>
+        addTopNav();
+    </script>
+
+    <section style="min-height: 85vh">
+        <script>
+            addHeader();
+        </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>20/10/2023.
+                </p>
+                <br />
+                <p>
+                    Đồ án bài tập lớn về web thương mại điện tử tại Trường Đại học Tân Trào là một dự án quan trọng trong chương trình học của sinh viên, nhằm mục tiêu phát triển và ứng dụng kiến thức trong lĩnh vực phát triển web và thương mại điện tử. Đây là một cơ hội
+                    để sinh viên tự mình hoặc theo nhóm thực hiện một ứng dụng web thương mại điện tử từ đầu đến cuối, bao gồm cả thiết kế giao diện, cơ sở dữ liệu, tích hợp thanh toán, và quản lý sản phẩm. Dự án bài tập lớn này không chỉ yêu cầu kiến
+                    thức về lập trình web mà còn đòi hỏi kỹ năng quản lý dự án, thiết kế người dùng, và hiểu biết về kinh doanh điện tử. Sinh viên thường cần xác định một thị trường tiềm năng và phát triển một trải nghiệm mua sắm trực tuyến hấp dẫn dành
+                    cho người dùng.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        addContainTaiKhoan();
+    </script>
+
+    <div class="footer">
+        <script>
+            addFooter();
+        </script>
+
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>

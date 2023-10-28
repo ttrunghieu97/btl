@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế giới điện thoại</title>
+    <link rel="shortcut icon" th:href="@{img/favicon.ico}" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" th:href="@{css/style.css}">
+    <link rel="stylesheet" th:href="@{css/topnav.css}">
+    <link rel="stylesheet" th:href="@{css/header.css}">
+    <link rel="stylesheet" th:href="@{css/taikhoan.css}">
+    <link rel="stylesheet" th:href="@{css/footer.css}">
+    <link rel="stylesheet" th:href="@{css/tintuc.css}">
+
+    <script th:src="@{data/products.js}"></script>
+    <script th:src="@{js/dungchung.js}"></script>
+    <script>
+        window.onload = function() {
+            khoiTao();
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script>
+        addTopNav();
+    </script>
+
+    <section style="min-height: 85vh">
+        <script>
+            addHeader();
+        </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="" target="_blank">
+                    <img src="img/tintuc/tintuc1.png">
+                    <h2>Xiaomi càng ngày càng làm camera to</h2>
+                </a>
+                <br/>
+                <h5>Doanh ngiệp &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="" target="_blank">
+                    <img src="img/tintuc/tintuc2.png">
+                    <h2>Set quà 20/10 cực ý nghĩa cho các chị em</h2>
+                </a>
+                <br/>
+                <h5>Thanh niên &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="" target="_blank">
+                    <img src="img/tintuc/tintuc3.png">
+                    <h2>Camera độ sâu đang được giảm giá tràn lan</h2>
+                </a>
+                <br/>
+                <h5>VOV &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="" target="_blank">
+                    <img src="img/tintuc/tintuc4.png">
+                    <h2>Laptop gamming giảm giá kịch sàn chỉ còn 20k 1 chiếc</h2>
+                </a>
+                <br/>
+                <h5>VietQ &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="" target="_blank">
+                    <img src="img/tintuc/tintuc5.png" height="148px" width="224px;">
+                    <h2>Iphone 15 đẹp nhưng không có tiền mua</h2>
+                </a>
+                <br/>
+                <h5>Zing &emsp; 9 giờ</h5>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        addContainTaiKhoan();
+    </script>
+
+    <div class="footer">
+        <script>
+            addFooter();
+        </script>
+
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>
